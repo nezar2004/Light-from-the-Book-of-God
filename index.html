@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نورٌ من كتاب الله، لمن أثقلته الهموم.</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      overflow: auto;
+      user-select: none;
+      background-image: url("https://i.pinimg.com/736x/e8/3f/00/e83f00addf316e3eb384f6c5b5b494c4.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons a img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .feedback-text {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: cyan;
+      margin-top: 30px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+    }
+
+    .verse-box {
+      margin: 15px 0;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2);
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .verse-box q {
+      font-weight: bold;
+      color: #00ffff;
+      font-size: 20px;
+    }
+
+    button {
+      background-color: #00ffff;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .feedback-form {
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    input, textarea {
+      width: 90%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("jxKV45bZn-PmfU9JO");
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/n____1____b/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/N.1.B.N.1.B" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.snapchat.com/add/nezarahmad55?share_id=5E-plotCgfI&locale=ar-EG" target="_blank">
+        <img src="https://img.utdstc.com/icon/f34/805/f34805cdd3d43b7ab36b39621fc47de11263f0f53c3460f9186ba293f2696cef:200" alt="Snapchat">
+      </a>
+    </div>
+
+    <div class="feedback-text">❤️ في كتاب الله نورٌ للقلوب، وسكينةٌ للروح، وأملٌ لا يخبو مهما اشتدت الهموم. ❤️</div>
+
+    <div class="social-icons">
+      <!-- مكررة لتوازن التصميم -->
+      <a href="https://www.instagram.com/n____1____b/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/N.1.B.N.1.B" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.snapchat.com/add/nezarahmad55?share_id=5E-plotCgfI&locale=ar-EG" target="_blank">
+        <img src="https://img.utdstc.com/icon/f34/805/f34805cdd3d43b7ab36b39621fc47de11263f0f53c3460f9186ba293f2696cef:200" alt="Snapchat">
+      </a>
+    </div>
+  </div>
+
+  <header>
+    <h1>نورٌ من كتاب الله، لمن أثقلته الهموم.</h1>
+    <p>آيات تُضيء القلب وتطمئن النفس</p>
+    <button onclick="startSite()">ابدأ رحلتك</button>
+  </header>
+
+  <main id="verse-section" style="display:none;">
+    <h2>آية اليوم</h2>
+    <div class="verse-box">
+      <p id="verse-text">قال الله تعالى: <q>وَبَشِّرِ الصَّابِرِينَ</q> [البقرة: 155]</p>
+      <p id="verse-meaning">تطمين من الله بأن للصابرين بشارة وجزاء عظيم.</p>
+    </div>
+    <button onclick="showRandomVerse()">آية عشوائية أخرى</button>
+  </main>
+
+
+
+  <script>
+    function startSite() {
+      document.getElementById("verse-section").style.display = "block";
+    }
+
+    const verses = [
+      { text: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا", meaning: "طمأنة من الله بأن بعد كل ضيق فرج." },
+      { text: "وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مَخْرَجًۭا", meaning: "وعد من الله لمن يتقيه أن يخرجه من الشدة." },
+      { text: "إِنَّ مَعَ الْعُسْرِ يُسْرًا", meaning: "تأكيد على أن الفرج ملازم للضيق." },
+      { text: "إِنَّ رَبِّي لَسَمِيعُ ٱلدُّعَاءِ", meaning: "الله يسمع دعاءك دائمًا فلا تيأس." },
+      { text: "وَبَشِّرِ الصَّابِرِينَ", meaning: "الصابرون لهم بشارة من الله." }
+    ];
+
+    function showRandomVerse() {
+      const random = verses[Math.floor(Math.random() * verses.length)];
+      document.getElementById("verse-text").innerHTML = `قال الله تعالى: <q>${random.text}</q>`;
+      document.getElementById("verse-meaning").innerText = random.meaning;
+    }
+
+
+  </script>
+
+</body>
+</html>
