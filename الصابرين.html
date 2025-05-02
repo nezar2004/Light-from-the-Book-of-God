@@ -33,6 +33,22 @@
         a:hover {
             color: red;
         }
+        .chapters-grid {
+            display: block; /* لجعل العناصر تظهر تحت بعضها */
+            margin-top: 20px;
+        }
+        .chapter {
+            background-color: rgba(255, 165, 0, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px; /* إضافة مسافة بين العناصر */
+        }
+        .chapter a {
+            color: white;
+        }
+        .chapter a:hover {
+            color: red;
+        }
         @media (max-width: 600px) {
             .content {
                 width: 90%;
@@ -45,10 +61,26 @@
 
 <div class="content">
     <h1>الصابرين</h1>
-    <p>قيد الإنشاء</p>
+    <div class="chapters-grid"> 
+        <div class="chapter">
+            <a href="https://github.com/nezar2004/Light-from-the-Book-of-God/blob/main/%D8%B5%D9%81%D8%AD%D8%A9%20%D8%A7%D9%84%D8%B5%D8%A7%D8%A8%D8%B1%D9%8A%D9%86.html" title="صفحة الصابرين">
+                صفحة الصابرين
+            </a>
+        </div>
+        <div class="chapter">
+            <a href="https://github.com/nezar2004/Light-from-the-Book-of-God/blob/main/%D8%A8%D8%B4%D8%A7%D8%A6%D8%B1%20%D8%A7%D9%84%D8%B5%D8%A7%D8%A8%D8%B1%D9%8A%D9%86.html" title="بشائر الصابرين">
+                بشائر الصابرين
+            </a>
+        </div>
+        <div class="chapter">
+            <a href="https://github.com/nezar2004/Light-from-the-Book-of-God/blob/main/%D9%86%D9%88%D8%B1%20%D8%A7%D9%84%D8%B5%D8%A8%D8%B1.html" title="نور الصابرين">
+                نور الصبر
+            </a>
+        </div>
+    </div>
+
     <a href="https://nezar2004.github.io/Light-from-the-Book-of-God/">العودة إلى الصفحة الرئيسية</a>
 </div>
 
 </body>
 </html>
-
