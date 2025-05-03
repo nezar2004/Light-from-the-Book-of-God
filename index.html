@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -9,17 +9,14 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       color: white;
       margin: 0;
       padding: 0;
-      height: auto;
-      overflow: auto;
-      user-select: none;
       background-image: url("https://i.pinimg.com/736x/e8/3f/00/e83f00addf316e3eb384f6c5b5b494c4.jpg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      text-align: center;
     }
 
     .navbar {
@@ -63,26 +60,25 @@
     }
 
     .content {
-      position: relative;
-      z-index: 1;
-      padding: 20px;
-      max-width: 1000px;
-      margin: 50px auto;
-      background-color: rgba(0, 0, 0, 0.85); /* زيادة وضوح الخلفية */
-      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 12px;
+      padding: 30px 20px;
+      max-width: 400px;
+      margin: 40px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
     .chapters-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
     }
 
     .chapter a {
       display: block;
-      padding: 15px;
-      background-color: rgba(255, 255, 255, 0.15);
+      padding: 14px;
+      background-color: rgba(255, 255, 255, 0.1);
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -91,7 +87,7 @@
     }
 
     .chapter a:hover {
-      background-color: rgba(0, 255, 255, 0.3);
+      background-color: rgba(0, 255, 255, 0.25);
       transform: translateY(-3px);
     }
 
@@ -99,13 +95,16 @@
       to { opacity: 1; }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       .feedback-text {
         font-size: 14px;
       }
+      .content {
+        max-width: 90%;
+        padding: 20px;
+      }
     }
   </style>
-
 </head>
 <body>
 
