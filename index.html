@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -38,6 +38,11 @@ DOCTYPE html>
     .social-icons a img {
       width: 24px;
       height: 24px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.2);
     }
 
     .feedback-text {
@@ -49,8 +54,9 @@ DOCTYPE html>
     }
 
     h1 {
-      color: cyan;
+      color: rgba(0, 255, 255, 0.9);
       margin-top: 30px;
+      text-shadow: 1px 1px 5px black;
       opacity: 0;
       animation: fadeIn 2s forwards;
     }
@@ -83,12 +89,13 @@ DOCTYPE html>
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
     }
 
     .chapter a:hover {
-      background-color: rgba(0, 255, 255, 0.25);
-      transform: translateY(-3px);
+      background-color: rgba(0, 255, 255, 0.4);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
     }
 
     @keyframes fadeIn {
@@ -107,7 +114,6 @@ DOCTYPE html>
   </style>
 </head>
 <body>
-
   <div class="navbar">
     <div class="social-icons">
       <a href="https://www.instagram.com/n____1____b/" target="_blank">
