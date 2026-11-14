@@ -145,3 +145,12 @@ svg { display: block; width: 1.5rem; height: 1.5rem; }
   .reading-nav a[rel="next"] { grid-column: auto; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+
+@media (max-width: 580px) {
+  .hero-copy { padding-inline: 1.35rem; }
+  .hero h1 { font-size: clamp(2.15rem, 10vw, 3.35rem); }
+  .topic-card { min-height: 5rem; grid-template-columns: 1.65rem minmax(0, 1fr) 1rem; gap: .2rem .55rem; }
+  .reading-header h1 { font-size: clamp(2rem, 9vw, 2.7rem); overflow-wrap: anywhere; }
+  .ayah .verse { font-size: clamp(1.45rem, 6vw, 1.8rem); overflow-wrap: anywhere; }
+  .reading-nav a { min-width: 0; overflow-wrap: anywhere; }
+}
